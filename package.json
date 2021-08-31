@@ -1,0 +1,30 @@
+{
+  "name": "sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon --exec babel-node jsAssignment.js",
+    "test": "jest --watchAll --testPathPattern=/tests"
+  },
+  "author": "",
+  "license": "ISC",
+  "jest": {
+    "testEnvironment": "node",
+    "transform": {
+      "^.+\\.(js|jsx|ts|tsx|mjs)$": "babel-jest"
+    }
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.15.0",
+    "@babel/node": "^7.14.9",
+    "@babel/preset-env": "^7.15.0",
+    "babel-jest": "^27.1.0",
+    "http-server": "^13.0.1",
+    "jest": "^27.1.0",
+    "lodash": "^4.17.21",
+    "nodemon": "^2.0.12"
+  }
+}
